@@ -19,13 +19,14 @@ Traditional scrapers rely on fragile CSS selectors. This project uses a local LL
 ## Disclaimer
 Disclaimer: This tool is intended for personal use only. You should only scrape and download content for which you own the rights or have explicit permission from the copyright holder. The developer does not condone or support copyright infringement of any kind.
 
+## 🧠 AI Setup (Ollama)
+To use the AI extraction features, make sure Ollama is installed and running on your server or local machine.
+
+If you’re running Ollama on a separate server, update the ask_llama() function in src/ollama_scraper.py to point to your remote machine’s IP address:
+
 ## Installation
 ```bash
 git clone https://github.com/ShaneMatthews93/ollama_webnovel_to_epub
 cd ollama_webnovel_to_epub
 pip install -r requirements.txt
-
-## 🧠 AI Setup (Ollama)
-To use the AI extraction features, make sure Ollama is installed and running on your server or local machine.
-
-If you’re running Ollama on a separate server, update the ask_llama() function in src/ollama_scraper.py to point to your remote machine’s IP address:
+```
